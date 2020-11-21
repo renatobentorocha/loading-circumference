@@ -22,8 +22,6 @@ import { Circle } from './Circle';
 
 const { width } = Dimensions.get('window');
 
-// import { Container } from './styles';
-
 const COLORS = ['#FF6E02', '#E56300', '#B34D02'];
 
 const scaleWithTiming = (
@@ -112,14 +110,14 @@ const Loading: React.FC = () => {
     <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
       {COLORS.map((color, index) => {
         const center = width / 2 - 40 / 2;
-        let left = center - 40 - 30;
+        const left = center - 40 - 30;
         const third = center + 40 + 30;
 
         if (index === 0) {
-          left = center - 40 - 30;
+          // left = center - 40 - 30;
           // next = center;
         } else if (index === 2) {
-          left = center + 40 + 30;
+          // left = center + 40 + 30;
           // next = center - 40 - 30;
         }
 
@@ -130,7 +128,7 @@ const Loading: React.FC = () => {
             key={index.toString()}
             color={color}
             position={left}
-            beginState={index === 2 ? 1 : 0}
+            beginState={index === 0 ? 1 : 0}
             translateTo={third}
           />
         );
