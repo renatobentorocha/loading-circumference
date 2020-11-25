@@ -18,7 +18,7 @@
 # Configure expo (https://expo.io)
 
 # Clone this repository
-$ git clone https://github.com/renatobentorocha/loading-ellipsis.git Loading
+$ git clone https://github.com/renatobentorocha/loading-circumference.git Loading
 
 # Go into the repository
 $ cd Loading
